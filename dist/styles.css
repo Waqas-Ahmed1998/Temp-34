@@ -501,6 +501,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -521,31 +529,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[1170px\] {
   max-width: 1170px;
-}
-
-@-webkit-keyframes wiggle {
-  0%, 100% {
-    transform: rotate(-3deg);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-}
-
-@keyframes wiggle {
-  0%, 100% {
-    transform: rotate(-3deg);
-  }
-
-  50% {
-    transform: rotate(3deg);
-  }
-}
-
-.animate-wiggle {
-  -webkit-animation: wiggle 3s ease-in-out infinite;
-          animation: wiggle 3s ease-in-out infinite;
 }
 
 .cursor-pointer {
@@ -607,9 +590,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: transparent;
 }
 
-.bg-\[\#3D3D3B\] {
+.bg-\[\#9e66a5\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(61 61 59 / var(--tw-bg-opacity));
+  background-color: rgb(158 102 165 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
@@ -619,16 +602,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#921dbd\] {
   --tw-bg-opacity: 1;
   background-color: rgb(146 29 189 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#b561c0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(181 97 192 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#9e66a5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(158 102 165 / var(--tw-bg-opacity));
 }
 
 .py-7 {
@@ -869,6 +842,31 @@ font-family: 'Vazirmatn', sans-serif;*/
     --tw-scale-x: 2.5;
     --tw-scale-y: 2.5;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  @-webkit-keyframes wiggle {
+    0%, 100% {
+      transform: rotate(-3deg);
+    }
+
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+  @keyframes wiggle {
+    0%, 100% {
+      transform: rotate(-3deg);
+    }
+
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+  .md\:animate-wiggle {
+    -webkit-animation: wiggle 3s ease-in-out infinite;
+            animation: wiggle 3s ease-in-out infinite;
   }
 
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
